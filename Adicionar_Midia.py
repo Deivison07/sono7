@@ -46,6 +46,7 @@ class primeiro1(QFrame, Ui_Frame):
     self.linktrecho.clear()
     self.linhasnum()
     
+    
 
   def salvarcampos(self):
     self.linhasnum()
