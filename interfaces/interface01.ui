@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>771</width>
+    <height>310</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Sono7</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>1451</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(214, 214, 214);</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="usesScrollButtons">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Midia</string>
+     </attribute>
+     <widget class="QLabel" name="iconeMusica">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>logoAdv.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="buddy">
+       <cstring>mudarTrack</cstring>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="play">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Play - Pause</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>botao-de-play-pause_318-43701.jpg</normaloff>botao-de-play-pause_318-43701.jpg</iconset>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="stop">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>60</y>
+        <width>101</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="mudarTrack">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>90</y>
+        <width>101</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Playback / Trilha</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>16</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QSlider" name="verticalSlider">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>30</y>
+        <width>20</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(84, 255, 147);</string>
+      </property>
+      <property name="maximum">
+       <number>100</number>
+      </property>
+      <property name="value">
+       <number>100</number>
+      </property>
+      <property name="sliderPosition">
+       <number>100</number>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="reproduzindo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>0</y>
+        <width>251</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 12pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sem Midia</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>251</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="label_2">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 8pt &quot;Sans Serif&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Informe a midia externa..</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QToolButton" name="adicionar">
+         <property name="text">
+          <string>...</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>botao-de-play_318-40670.jpg</normaloff>botao-de-play_318-40670.jpg</iconset>
+         </property>
+         <property name="popupMode">
+          <enum>QToolButton::InstantPopup</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QToolButton" name="toolButton_2">
+         <property name="text">
+          <string>...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="4">
+        <widget class="QListWidget" name="lista_musicas">
+         <property name="cursor" stdset="0">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="acceptDrops">
+          <bool>true</bool>
+         </property>
+         <property name="toolTip">
+          <string notr="true"/>
+         </property>
+         <property name="statusTip">
+          <string notr="true"/>
+         </property>
+         <property name="whatsThis">
+          <string notr="true"/>
+         </property>
+         <property name="accessibleName">
+          <string notr="true"/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="viewMode">
+          <enum>QListView::ListMode</enum>
+         </property>
+         <property name="modelColumn">
+          <number>0</number>
+         </property>
+         <property name="uniformItemSizes">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>0</y>
+        <width>501</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="trechos3">
+           <property name="styleSheet">
+            <string notr="true">font: 75 14pt &quot;Sans Serif&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Trechos</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="lista_trecho">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(252, 252, 252);</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item alignment="Qt::AlignHCenter">
+          <widget class="QLabel" name="label_3">
+           <property name="styleSheet">
+            <string notr="true">font: 75 14pt &quot;Sans Serif&quot;;</string>
+           </property>
+           <property name="text">
+            <string>Pesquisa</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLineEdit" name="pesquisa">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="botaopesquisa">
+             <property name="text">
+              <string>Go</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QCheckBox" name="nomep">
+             <property name="text">
+              <string>Nome ou Album</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Profissao">
+             <property name="text">
+              <string>Trecho</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listadevalores">
+           <property name="styleSheet">
+            <string notr="true">font: 75 italic 9pt &quot;Sans Serif&quot;;
+background-color: rgb(255, 255, 255);
+font: 9pt &quot;Sans Serif&quot;;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Utilidade</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>340</y>
+      <width>771</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item alignment="Qt::AlignHCenter">
+        <widget class="QLabel" name="label">
+         <property name="styleSheet">
+          <string notr="true">font: 75 12pt &quot;Sans Serif&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Albuns</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLineEdit" name="pesquisarAlbum"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="botaoAlbum">
+           <property name="text">
+            <string>Go</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="imagem">
+           <property name="text">
+            <string>Capa</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QListWidget" name="album"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListWidget" name="conteudoAlbum"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

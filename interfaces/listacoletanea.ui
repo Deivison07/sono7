@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Frame</class>
+ <widget class="QFrame" name="Frame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>656</width>
+    <height>377</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="frameShape">
+   <enum>QFrame::StyledPanel</enum>
+  </property>
+  <property name="frameShadow">
+   <enum>QFrame::Raised</enum>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>151</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(/adoradores.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>adoradores.png</normaloff>adoradores.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>135</width>
+        <height>185</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 75 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Adoradores 1</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>10</y>
+     <width>151</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item alignment="Qt::AlignVCenter">
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/newPrefix/adoradores.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>botao-de-play-pause_318-43701.jpg</normaloff>botao-de-play-pause_318-43701.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>135</width>
+        <height>185</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 75 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Adoradores 2</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>10</y>
+     <width>151</width>
+     <height>220</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/newPrefix/adoradores.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>botao-de-play_318-40670.jpg</normaloff>botao-de-play_318-40670.jpg</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>135</width>
+        <height>185</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 75 10pt &quot;Sans Serif&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Adoradores 3</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imagensProgeto.qrc"/>
+ </resources>
+ <connections/>
+</ui>
