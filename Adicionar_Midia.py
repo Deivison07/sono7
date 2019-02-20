@@ -29,6 +29,7 @@ class primeiro1(QFrame, Ui_Frame):
   def pesquise(self):
       self.tela2 = primeiro()
       self.tela2.show()
+      '''commit'''
     
   def linhasnum(self):
     self.cursor.execute ("""SELECT count(*) FROM teste""")
