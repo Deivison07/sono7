@@ -29,6 +29,7 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
     #self.player3 = vlc
     self.player = Instance()
     self.player2 = MediaPlayer()
+    
 
 
     self.conteudoAlbum.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
