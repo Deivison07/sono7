@@ -24,6 +24,7 @@ class primeiro1(QFrame, Ui_Frame):
     self.cursor = self.conn.cursor()
     self.linhasnum()
     self.numero.clear()
+    print('iniciando')
     
     
   def pesquise(self):

@@ -5,13 +5,12 @@
 # por Deivison de alcantara
 
 import sys
+import time
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtCore import pyqtSlot
 from output import *
-from vlc import Instance
-from vlc import MediaPlayer
-#from vlc import 
+import vlc
 import os
 import motorSlide2
 import time
@@ -27,9 +26,9 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
     self.setupUi(self)
     #primeiro foi colocado no atributo player a funcao instancia do vlc
     #self.player3 = vlc
-    self.player = Instance()
-    self.player2 = MediaPlayer()
-    
+    self.player = vlc.Instance()
+    self.player2 = vlc.MediaPlayer()
+
 
 
     self.conteudoAlbum.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
@@ -153,17 +152,17 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
 
           """.format(self.pesquisarAlbum.text()))
     try:
-      
+
       self.cursor.execute(sql)
       for x in self.cursor.fetchall():
         self.album.addItem(x[0])
-        
+
     except Exception:
       pass
 
   def lista(self):
-    
-  
+
+
     try:
       self.listadevalores.clear()
       self.dicitempesq = {}
@@ -235,7 +234,7 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
           self.listadevalores.addItem(item)
     except Exception:
       pass
-    
+
 
   def mostrar(self,item):
 
@@ -270,12 +269,12 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
     self.lista_trecho.setVisible(0)
     self.trechos3.setVisible(0)
     self.trechostemp = motorSlide2
-    
+
 
     try:
-     
+
       self.trechostemp2 = self.trechostemp.legenda(self.dicitemp[item.text()][2])
-      
+
       for element in self.trechostemp.coisas:
 
         nomes = str(element)
@@ -456,7 +455,7 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
               self.lista_musicas.addItem(item2)
 
       self.ativado = False
-      
+
   @pyqtSlot()
   def on_pushButton_6_clicked(self):
     print('funcionou')
@@ -483,9 +482,9 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
 
   @pyqtSlot("bool")
   def on_toolButton_2_clicked(self, status):
-    
+
     self.nomet =( QFileDialog.getOpenFileName(None, 'Open file','.','all (*);;Imagem (*.jpeg);;Audio (*.wav)(*.mp3);; Video (*.mp4 *.avi)'))
-    
+
     if self.nomet[0]!= '':
       self.nome = self.nomet[0]
       self.adicionar.setEnabled(1)
