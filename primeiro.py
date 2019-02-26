@@ -5,7 +5,6 @@
 # por Deivison de alcantara
 
 import sys
-import time
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QFileDialog
 from PyQt5.QtCore import pyqtSlot
@@ -25,7 +24,7 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
     super(primeiro, self).__init__(parent)
     self.setupUi(self)
     #primeiro foi colocado no atributo player a funcao instancia do vlc
-    #self.player3 = vlc
+    self.player3 = vlc
     self.player = vlc.Instance()
     self.player2 = vlc.MediaPlayer()
 
@@ -125,6 +124,7 @@ class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
 
   def coletanea2(self):
     self.index.show()
+
 
   def coletaneax4(self):
     self.dicitemp = {}
