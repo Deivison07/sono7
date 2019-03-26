@@ -18,15 +18,17 @@ from scrowcoletanea import scrow
 from indexcoletanea import *
 
 
+
 class primeiro(QtWidgets.QMainWindow, Ui_MainWindow):
 
   def __init__(self, parent = None):
-    super(primeiro, self).__init__(parent)
+    super().__init__()
     self.setupUi(self)
     #primeiro foi colocado no atributo player a funcao instancia do vlc
     self.player3 = vlc
     self.player = vlc.Instance()
     self.player2 = vlc.MediaPlayer()
+  
 
 
 
