@@ -2,22 +2,23 @@
 
 # Form implementation generated from reading ui file 'interface01.ui'
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created by: PyQt5 UI code generator 5.12
 #
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(771, 572)
+        MainWindow.resize(786, 571)
         MainWindow.setMinimumSize(QtCore.QSize(771, 310))
         MainWindow.setDocumentMode(False)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
-        self.tabWidget.setGeometry(QtCore.QRect(0, 0, 1456, 331))
+        self.tabWidget.setGeometry(QtCore.QRect(0, 10, 1451, 331))
         self.tabWidget.setStyleSheet("background-color: rgb(214, 214, 214);")
         self.tabWidget.setUsesScrollButtons(False)
         self.tabWidget.setObjectName("tabWidget")
@@ -26,7 +27,6 @@ class Ui_MainWindow(object):
         self.iconeMusica = QtWidgets.QLabel(self.tab)
         self.iconeMusica.setGeometry(QtCore.QRect(10, 30, 81, 81))
         self.iconeMusica.setText("")
-        self.iconeMusica.setPixmap(QtGui.QPixmap("logoAdv.png"))
         self.iconeMusica.setScaledContents(True)
         self.iconeMusica.setObjectName("iconeMusica")
         self.play = QtWidgets.QPushButton(self.tab)
@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         self.verticalSlider.setOrientation(QtCore.Qt.Vertical)
         self.verticalSlider.setObjectName("verticalSlider")
         self.reproduzindo = QtWidgets.QLabel(self.tab)
-        self.reproduzindo.setGeometry(QtCore.QRect(10, 0, 251, 31))
+        self.reproduzindo.setGeometry(QtCore.QRect(10, 0, 251, 21))
         self.reproduzindo.setStyleSheet("font: 75 italic 12pt \"Sans Serif\";")
         self.reproduzindo.setObjectName("reproduzindo")
         self.gridLayoutWidget = QtWidgets.QWidget(self.tab)
@@ -73,9 +73,6 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName("label_2")
         self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
         self.adicionar = QtWidgets.QToolButton(self.gridLayoutWidget)
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("botao-de-play_318-40670.jpg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.adicionar.setIcon(icon1)
         self.adicionar.setPopupMode(QtWidgets.QToolButton.InstantPopup)
         self.adicionar.setObjectName("adicionar")
         self.gridLayout.addWidget(self.adicionar, 1, 1, 1, 1)
@@ -207,9 +204,11 @@ class Ui_MainWindow(object):
         self.Profissao.setText(_translate("MainWindow", "Trecho"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Midia"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "Utilidade"))
-        self.label.setText(_translate("MainWindow", "Albums"))
+        self.label.setText(_translate("MainWindow", "Albuns"))
         self.botaoAlbum.setText(_translate("MainWindow", "Go"))
         self.imagem.setText(_translate("MainWindow", "Capa"))
+
+
 
 
 if __name__ == "__main__":
@@ -220,4 +219,3 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
